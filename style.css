@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: #6b00a5;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navibar {
+    position: relative;
+    height: 120px;
+    width: 500px;
+    background: white;
+    border-radius: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.navibar ul {
+    position: relative;
+    display: flex;
+}
+
+.navibar ul li {
+    position: relative;
+    list-style-type: none;
+}
+
+.navibar ul li a {
+    position: relative;
+    height: 120px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.navibar ul li a i {
+    color: #6b00a5;
+    font-size: 38px;
+    position: absolute;
+}
+
+.active {
+    opacity: 0;
+}
+
+.navibar ul li.active-list a i {
+    opacity: 1;
+}
+
+.indicator {
+    position: absolute;
+    bottom: -19px;
+    left: 34px;
+    width: 25px;
+    height: 36px;
+    background: #6b00a5;
+    border-radius: 50%;
+}
+
+.indicator::before {
+    content: "";
+    position: absolute;
+    left: -15PX;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: white;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 10px 0 #6b00a5;
+}
+
+.indicator::after {
+    content: "";
+    position: absolute;
+    right: -15PX;
+    bottom: 50%;
+    height: 22px;
+    width: 20px;
+    background: white;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 10px 0 #6b00a5;
+}
